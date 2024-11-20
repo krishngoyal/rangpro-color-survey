@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RangPro Color Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>RangPro Color Survey</h1>
+            <p>Sales Executives can record shopkeeper details and their preferred colors.</p>
+        </header>
+
+        <main>
+            <!-- Shopkeeper Details Form -->
+            <form id="survey-form">
+                <h2>Shopkeeper Details</h2>
+                <input type="text" id="shop-name" placeholder="Shop Name" required />
+                <input type="text" id="shopkeeper-name" placeholder="Shopkeeper Name" required />
+                <input type="tel" id="contact-number" placeholder="Contact Number" required />
+                <input type="date" id="visit-date" required />
+                <textarea id="shop-address" placeholder="Shop Address" rows="3" required></textarea>
+
+                <!-- Color Selection Grid -->
+                <h2>Select Colors</h2>
+                <div class="color-grid">
+                    <!-- Colors will be dynamically added -->
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+
+            <!-- Summary Table -->
+            <h2>Summary of Shopkeepers</h2>
+            <table id="summary-table">
+                <thead>
+                    <tr>
+                        <th>Shop Name</th>
+                        <th>Shopkeeper Name</th>
+                        <th>Contact Number</th>
+                        <th>Visit Date</th>
+                        <th>Address</th>
+                        <th>Selected Colors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Shopkeeper data will be displayed here -->
+                </tbody>
+            </table>
+
+            <!-- Color Demand Table -->
+            <h2>Total Color Demand</h2>
+            <table id="color-demand-table">
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Total Selections</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Color demand data will be displayed here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
